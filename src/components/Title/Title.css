@@ -1,0 +1,16 @@
+h1 {
+  font-size: 50px;
+  color: #FB2576;
+  filter: drop-shadow(3px 3px #150050);
+}
+
+h2 {
+  font-size: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+
+h2 a, h2 a:visited {
+  color: #FB2576;
+}

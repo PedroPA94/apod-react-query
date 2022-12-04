@@ -1,10 +1,9 @@
-import 'dotenv';
 import { useQuery } from "react-query";
 import { PictureData } from "../../interfaces";
 import PictureDescription from "../PictureDescription/PictureDescription";
 import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
 
-const API_KEY = process.env.API_KEY
+const API_KEY = process.env.REACT_APP_API_KEY
 
 const fetchPicture = async () => {
   const data = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
