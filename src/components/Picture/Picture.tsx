@@ -21,9 +21,9 @@ export default function Picture() {
   return (
       <>
         {
-          data.media_type === 'image'
-          ? <img src={data.url} alt={data.title}/>
-          : <YoutubeEmbed videoUrl={data.url} videoTitle={data.title} />
+          data.media_type === 'video'
+          ? <YoutubeEmbed videoUrl={data.url} videoTitle={data.title} />
+          : <img src={data.url} alt={data.title}/>
         }
         <PictureDescription picture={data} />
       </>
